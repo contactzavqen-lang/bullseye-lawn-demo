@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bullseye Lawn Care | Lawn Care in San Antonio, TX</title>
+<meta name="description" content="Reliable mowing, edging, trimming and yard cleanups in San Antonio. Free quotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f6ef;--ink:#16241a;--muted:#4d5f52;--card:#ffffff;--line:#d7e0d2;
+  --green:#1f4d2b;--green2:#2f6b3d;--grass:#8cc152;--red:#c8312b;--onGreen:#f3f6ef;
+  --font-d:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --font-b:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1a12;--ink:#e8f0e4;--muted:#a3b5a7;--card:#16241a;--line:#27402d;--green:#16301d;--green2:#2f6b3d;--onGreen:#f3f6ef}}
+:root[data-theme="dark"]{--bg:#0f1a12;--ink:#e8f0e4;--muted:#a3b5a7;--card:#16241a;--line:#27402d;--green:#16301d;--green2:#2f6b3d;--onGreen:#f3f6ef}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 var(--font-b);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--font-d);line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font:800 20px var(--font-d);text-decoration:none}
+.nav nav{display:flex;gap:22px;align-items:center}
+.nav nav a{text-decoration:none;font-weight:600;font-size:16px}
+.btn{display:inline-block;background:var(--red);color:#fff;font:700 17px var(--font-d);padding:14px 24px;border-radius:999px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.btn.alt{background:transparent;color:var(--onGreen);border:2px solid var(--onGreen)}
+:focus-visible{outline:3px solid var(--grass);outline-offset:3px}
+.hero{background:var(--green);color:var(--onGreen);position:relative;overflow:hidden;
+  background-image:repeating-linear-gradient(90deg,transparent 0 70px,rgba(255,255,255,.045) 70px 140px)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;padding-top:72px;padding-bottom:72px}
+.hero h1{font-size:clamp(38px,6vw,64px);font-weight:800}
+.hero p{font-size:20px;max-width:46ch;margin:20px 0 28px;color:#dbe7d6}
+.hero .row{display:flex;gap:14px;flex-wrap:wrap}
+.target{width:100%;max-width:340px;justify-self:center;animation:pop .9s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes pop{from{transform:scale(.6) rotate(-20deg);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.target{animation:none}html{scroll-behavior:auto}}
+.strip{background:var(--card);border-bottom:1px solid var(--line)}
+.strip .wrap{display:flex;gap:12px 36px;flex-wrap:wrap;justify-content:center;padding-top:18px;padding-bottom:18px;font-weight:600;font-size:16px;color:var(--muted)}
+.strip b{color:var(--green2)}
+section{padding:72px 0}
+h2{font-size:clamp(30px,4.5vw,42px);font-weight:800;margin-bottom:12px}
+.lead{color:var(--muted);max-width:56ch;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.svc svg{width:34px;height:34px;stroke:var(--green2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
+.svc h3{font-size:22px;margin-bottom:6px}
+.svc p{margin:0;color:var(--muted);font-size:17px}
+.band{background:var(--card);border-block:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;counter-reset:s}
+.steps div{counter-increment:s;padding-left:58px;position:relative}
+.steps div::before{content:counter(s);position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;font:800 20px/42px var(--font-d);text-align:center}
+.steps h3{font-size:21px;margin-bottom:4px}.steps p{margin:0;color:var(--muted)}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px}
+.why h3{font-size:20px;margin-bottom:4px}.why p{margin:0;color:var(--muted)}
+.quotes figure{margin:0;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--grass);border-radius:10px;padding:22px}
+.quotes blockquote{margin:0 0 10px;font-size:19px}
+.quotes figcaption{color:var(--muted);font-size:15px}
+.areas{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.areas li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:600;font-size:16px}
+.quote{background:var(--green);color:var(--onGreen)}
+.quote .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.quote p{color:#dbe7d6}
+.quote .contact a{display:block;font:700 22px var(--font-d);text-decoration:none;margin-top:10px}
+form{display:grid;gap:12px}
+label{font-weight:600;font-size:15px;display:grid;gap:4px}
+input,select,textarea{font:400 17px var(--font-b);padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:#fff;color:#16241a;width:100%}
+footer{padding:28px 0;font-size:15px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:760px){
+  .hero .wrap,.quote .wrap{grid-template-columns:1fr}
+  .target{max-width:220px;order:-1}
+  .nav nav a:not(.btn){display:none}
+  section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="logo" href="#top" aria-label="Bullseye Lawn Care home">
+    <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#c8312b"/><circle cx="50" cy="50" r="32" fill="#f3f6ef"/><circle cx="50" cy="50" r="19" fill="#c8312b"/><circle cx="50" cy="50" r="7" fill="#f3f6ef"/></svg>
+    Bullseye Lawn Care
+  </a>
+  <nav><a href="#services">Services</a><a href="#how">How it works</a><a href="#areas">Service area</a><a class="btn" href="#quote">Get a free quote</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Lawn care that hits the mark, every visit.</h1>
+    <p>Mowing, edging, trimming and yard cleanups for homes across San Antonio. Show up on time, leave the yard sharp.</p>
+    <div class="row"><a class="btn" href="#quote">Get a free quote</a><a class="btn alt" href="tel:+12105550123">Call (210) 555-0123</a></div>
+  </div>
+  <svg class="target" viewBox="0 0 200 200" role="img" aria-label="Bullseye target">
+    <circle cx="100" cy="100" r="94" fill="#c8312b"/><circle cx="100" cy="100" r="76" fill="#f3f6ef"/>
+    <circle cx="100" cy="100" r="58" fill="#c8312b"/><circle cx="100" cy="100" r="40" fill="#f3f6ef"/>
+    <circle cx="100" cy="100" r="22" fill="#c8312b"/>
+    <path d="M100 100 L170 30" stroke="#8cc152" stroke-width="5" stroke-linecap="round"/>
+    <path d="M170 30 l-4 -16 M170 30 l-16 4" stroke="#8cc152" stroke-width="5" stroke-linecap="round"/>
+  </svg>
+</div></div>
+
+<div class="strip"><div class="wrap">
+  <span><b>Free</b> quotes, no pressure</span><span><b>Weekly</b> and bi-weekly service</span><span><b>Clear</b> upfront pricing</span><span><b>Local</b> San Antonio crew</span>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2>What we take care of</h2>
+  <p class="lead">Regular upkeep or a one-time reset. Tell us what your yard needs and we'll quote it.</p>
+  <div class="grid">
+    <div class="svc"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 20c0-5 1-9 2-12M12 20c0-6 0-10 0-14M18 20c0-5-1-9-2-12"/></svg><h3>Lawn mowing</h3><p>Weekly or bi-weekly cuts with clean stripes and a blown-off driveway.</p></div>
+    <div class="svc"><svg viewBox="0 0 24 24"><path d="M4 20 20 4M14 4h6v6"/></svg><h3>Edging and trimming</h3><p>Crisp lines along walks, beds and fences so the whole yard looks finished.</p></div>
+    <div class="svc"><svg viewBox="0 0 24 24"><path d="M12 21V11M12 11C8 11 5 8 5 4c4 0 7 3 7 7ZM12 14c3 0 6-2 6-6-3 0-6 2-6 6Z"/></svg><h3>Beds and weeding</h3><p>Weeding, mulch refresh and bed cleanup that keeps plants healthy.</p></div>
+    <div class="svc"><svg viewBox="0 0 24 24"><path d="M12 3v7M12 10l-5 4M12 10l5 4M12 14v7M8 21h8"/></svg><h3>Tree and shrub trimming</h3><p>Shaping hedges and trimming small trees and shrubs.</p></div>
+    <div class="svc"><svg viewBox="0 0 24 24"><path d="M4 18c3-6 6-9 16-12-1 10-5 13-12 14M4 18l6-6"/></svg><h3>Seasonal cleanups</h3><p>Leaves, brush and debris hauled off, ready for the next season.</p></div>
+    <div class="svc"><svg viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11Z"/></svg><h3>Sprinkler checks</h3><p>Spot broken heads and wasted water, with repairs quoted before any work.</p></div>
+  </div>
+</div></section>
+
+<section class="band" id="how"><div class="wrap">
+  <h2>Getting started is simple</h2>
+  <p class="lead">From first message to a finished yard.</p>
+  <div class="steps">
+    <div><h3>Tell us about your yard</h3><p>Send a quick message or call. A photo helps.</p></div>
+    <div><h3>Get a clear quote</h3><p>You get a price before we start. No surprises.</p></div>
+    <div><h3>We keep it looking sharp</h3><p>Pick a schedule and we handle the rest.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Why neighbors choose us</h2>
+  <p class="lead">Small crew, honest work.</p>
+  <div class="why">
+    <div><h3>On time</h3><p>We show up when we say we will and message if plans change.</p></div>
+    <div><h3>Careful detail</h3><p>Clean lines, tidy edges, and no clippings left behind.</p></div>
+    <div><h3>Fair pricing</h3><p>Flat, upfront quotes with no long contracts.</p></div>
+    <div><h3>Local and reachable</h3><p>Talk to the people who actually do the work.</p></div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap quotes">
+  <h2>What customers say</h2>
+  <p class="lead">Sample reviews shown for the preview. Real customer reviews go here.</p>
+  <div class="grid">
+    <figure><blockquote>Professional, prompt, friendly, and fairly priced.</blockquote><figcaption>Sample review, San Antonio homeowner</figcaption></figure>
+    <figure><blockquote>The yard looks better than it has in years.</blockquote><figcaption>Sample review, San Antonio homeowner</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="areas"><div class="wrap">
+  <h2>Where we work</h2>
+  <p class="lead">Serving San Antonio and nearby neighborhoods. Not sure if we reach you? Ask.</p>
+  <ul class="areas"><li>San Antonio</li><li>Helotes</li><li>Leon Valley</li><li>Castle Hills</li><li>Alamo Heights</li><li>Stone Oak</li><li>Boerne</li><li>Schertz</li></ul>
+</div></section>
+
+<section class="quote" id="quote"><div class="wrap">
+  <div>
+    <h2>Get your free quote</h2>
+    <p>Tell us a little about your yard and we'll reply with a price, usually within a day.</p>
+    <div class="contact"><a href="tel:+12105550123">(210) 555-0123</a><a href="mailto:hello@bullseyelawncare.com">hello@bullseyelawncare.com</a></div>
+  </div>
+  <div>
+    <form id="qf">
+      <label>Your name<input id="n" required autocomplete="name"></label>
+      <label>Phone or email<input id="c" required></label>
+      <label>Service<select id="s"><option>Lawn mowing</option><option>Edging and trimming</option><option>Beds and weeding</option><option>Tree and shrub trimming</option><option>Seasonal cleanup</option><option>Sprinkler check</option></select></label>
+      <label>Address or neighborhood<input id="a"></label>
+      <label>Anything we should know?<textarea id="m" rows="3"></textarea></label>
+      <button class="btn" type="submit">Request my quote</button>
+    </form>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>&copy; Bullseye Lawn Care, San Antonio, TX</span><span>Preview design. Phone number and details are placeholders.</span></div></footer>
+
+<script>
+document.getElementById('qf').addEventListener('submit',function(e){
+  e.preventDefault();
+  var v=function(i){return document.getElementById(i).value};
+  var body='Name: '+v('n')+'\nContact: '+v('c')+'\nService: '+v('s')+'\nAddress: '+v('a')+'\n\n'+v('m');
+  location.href='mailto:hello@bullseyelawncare.com?subject='+encodeURIComponent('Quote request: '+v('s'))+'&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
